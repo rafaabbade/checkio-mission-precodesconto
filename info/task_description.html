@@ -1,16 +1,15 @@
 <!-- Describe task in general -->
 
 <p>
-    Crie uma função que receba dois números inteiros como parâmetros e retorne a soma desses números.
-</p>
+Crie uma função que receba o preço de um produto e o percentual de desconto aplicado e retorne o preço final do produto.</p>
 
 <!-- Explain input and output values -->
 <p>
-    <strong>Entrada: </strong> Dois números inteiros a e b.
+    <strong>Entrada: </strong> Dois números float: o preço original do produto e o percentual de desconto aplicado (como um valor entre 0 e 1).
 </p>
 
 <p>
-    <strong>Saída: </strong> Um número inteiro, que é a soma de a e b. 
+    <strong>Saída: </strong> Um número float indicando o preço final do produto com o desconto aplicado.
 </p>
 
 
@@ -25,9 +24,10 @@
 countConsecutiveSummers(99) == 6
 </pre>
 {% else %}
-<pre class="brush: python">soma(2,3) == 5
-soma(-1,5) == 4
-soma(0,0) == 0
+<pre class="brush: python">
+preco_final(100, 0.25) == 75.0 
+preco_final(50, 0.1) == 45.0
+preco_final(75.5, 0.5) == 37.75
 </pre>
 {% endif %}
 </div>
