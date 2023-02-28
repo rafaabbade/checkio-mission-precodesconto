@@ -1,19 +1,24 @@
-def soma(a,b):
+def preco_final(preco, desconto):
     # escreva aqui seu código
     return None
 
 
 print("Example:")
-print(soma(3,2))
+print(preco_final(100, 0.1))
 
 # As funções assert são utilizadas para verificar se o resultado da função chamada é o esperado
-# testa a função com números positivos como parâmetros
-assert soma(2, 3) == 5 
-    
-# testa a função com um número negativo como parâmetro
-assert soma(-1, 5) == 4
-    
-# testa a função com zero como parâmetro
-assert soma(0, 0) == 0
+
+assert preco_final(100, 0.25) == 75.0 
+
+assert preco_final(50, 0.1) == 45.0 
+
+assert preco_final(75.5, 0.5) == 37.75
+
+# testa a função sem desconto    
+assert preco_final(55.5, 0) == 75.5
+
+# testa a função com 100% de descontro
+assert preco_final(89.9, 1) == 0
+
     
 print("Seu código passou pelos testes, clique em Check para avançar!")
