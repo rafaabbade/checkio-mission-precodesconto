@@ -15,7 +15,7 @@ assert preco_final(50, 0.1) == 45.0
 assert preco_final(75.5, 0.5) == 37.75
 
 # testa a função sem desconto    
-assert preco_final(55.5, 0) == 75.5
+assert preco_final(55.5, 0) == 55.5
 
 # testa a função com 100% de descontro
 assert preco_final(89.9, 1) == 0
